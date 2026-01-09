@@ -1,63 +1,123 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vaquinha Solidária</title>
+
   <style>
-    body {font-family: Arial, sans-serif; background:#f4f6f8; margin:0; padding:0;}
-    header {background:#2e7d32; color:white; padding:20px; text-align:center;}
-    .container {max-width:900px; margin:auto; padding:20px;}
-    .card {background:white; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}    
-    .progress {background:#ddd; border-radius:20px; overflow:hidden; margin:15px 0;}
-    .progress-bar {background:#2e7d32; height:20px; width:40%;}
-    .donate {margin-top:20px;}
-    input, button {width:100%; padding:10px; margin-top:10px;}
-    button {background:#2e7d32; color:white; border:none; border-radius:5px; cursor:pointer;}
-    footer {text-align:center; padding:15px; color:#555;}
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f1115;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    header {
+      background: #2e7d32;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1c1f26;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .progress {
+      background: #444;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 15px 0;
+    }
+
+    .progress-bar {
+      background: #2e7d32;
+      height: 20px;
+      width: 40%;
+    }
+
+    .pix-box {
+      background: #111;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 15px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+      font-size: 14px;
+    }
   </style>
 </head>
+
 <body>
+
   <header>
     <h1>Vaquinha Solidária</h1>
     <p>Ajude essa causa com qualquer valor ❤️</p>
-  </header>  <div class="container">
+  </header>
+
+  <div class="container">
     <div class="card">
       <h2>Objetivo: R$ 5.000</h2>
-      <p>Essa vaquinha foi criada para ajudar em uma causa importante. Toda contribuição faz a diferença.</p><div class="progress">
-    <div class="progress-bar"></div>
+      <p>
+        Essa vaquinha foi criada para ajudar em uma causa importante.
+        Toda contribuição faz a diferença.
+      </p>
+
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+
+      <p><strong>Arrecadado:</strong> R$ 2.000</p>
+
+      <hr>
+
+      <h3>Doações via PIX</h3>
+
+      <div class="pix-box">
+        <p><strong>Chave PIX (copie e cole):</strong></p>
+        <input
+          type="text"
+          value="tokironamikaze@gmail.com"
+          readonly
+          onclick="this.select()"
+        >
+
+        <p><strong>Nome do titular:</strong> Moisés</p>
+        <p><strong>Banco:</strong> Nubank</p>
+
+        <p style="font-size:12px; color:#bbb;">
+          O valor arrecadado será usado exclusivamente para o objetivo descrito nesta vaquinha.
+        </p>
+      </div>
+    </div>
   </div>
-  <p><strong>Arrecadado:</strong> R$ 2.000</p>
 
-  <div class="donate">
-    <h3><p><strong>Doações via Pix</strong></p>
-<p>Chave Pix: tokironamikaze@gmail.com</p>
-<p>Nome do titular: SHEIK</p>
-<p style="font-size:12px; color:#555;">
-O valor arrecadado será usado exclusivamente para o objetivo descrito nesta vaquinha.
-</p></h4>
-    <input type="text" placeholder="Seu nome (opcional)">
-    <input type="number" placeholder="Valor da doação (R$)">
-    <a href="https://wa.me/55SEUNUMERO?text=Oi,%20quero%20ajudar%20na%20vaquinha.%20Pode%20me%20enviar%20o%20PIX?" target="_blank">
-
-        <h3>Doações via Pix</h3>
-
-<h3>Doações via Pix</h3>
-
-<p><strong>Chave Pix:</strong> tokironamikaze@gmail.com</p>
-<input type="text" value="tokironamikaze@gmail.com" readonly onclick="this.select()">
-
-<p><strong>Nome:</strong> Moisés</p>
-<p><strong>Banco:</strong> Nubank</p>
-
-<p><strong>Nome:</strong> Moisés</p>
-<p><strong>Banco:</strong> Nubank</p>    
-<p><strong>PIX (copie e cole):</strong></p>
-<input type="text" value="tokironamikaze@gmail.com" readonly onclick="this.select()">
-
-<p><strong>Nome:</strong> Moisés</p>
-<p><strong>Banco:</strong> Nubank</p>
-  </div>  <footer>
+  <footer>
     <p>© 2026 - Vaquinha Online</p>
   </footer>
+
 </body>
 </html>
